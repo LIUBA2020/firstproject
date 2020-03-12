@@ -1,0 +1,59 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello SiteController!{% endblock %}
+
+{% block body %}
+<link rel="stylesheet" href="{{asset('/css/main.css')}} " />
+<body>
+<div class="diaporama1">
+
+
+</div>
+<table width ="100%" align = "middle" cellspacing = "20">
+<td width = "5%" valign ="top">
+<div align ="justify"> 
+</td>
+
+<td width = "10%" valign ="top">
+<div align ="justify"> 
+<br>
+</td>
+
+<td width ="50%" valign = "left">
+<section class="rubrique">
+   <rubrique>
+   <br>
+   <br>
+   <br>
+        <h2>Mariages</h2>
+        <div class="variable">
+             <img src="" alt="">
+             <p>Mariage en calèche à Martué!</p>
+            <p>Il ne suffit de lui dire oui, il faut y mettre les formes!</p>
+             <br>
+             <a href="{{path('mar')}}"class="btn btn-primary">Lire la suite</a>
+        </div>
+    </rubrique>
+    <rubrique>
+    <br>
+    <br>
+    <br>
+        <h2>Manifestations festives</h2>
+        <div class="variable">
+             <img src="" alt="">
+             <p>Dans une ambiance conviviale et familiale, la ferme équestre de Martué met à disposition ses fidèles chevaux et ses superbes calèches d'époque.</p>
+             <br>
+             <a href="{{path('man')}}"class="btn btn-primary">Lire la suite</a>
+        </div>
+</section>
+</td>
+<td width = "5%" valign ="top">
+<div align ="justify"> 
+</td>
+
+<td width = "10%" valign ="top">
+<div align ="justify"> 
+<br>
+</td>
+</body>
+{% endblock %}
